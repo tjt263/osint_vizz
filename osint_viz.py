@@ -24,11 +24,12 @@ class GraphToggleViz:
         self.net = Network(notebook=False, cdn_resources='in_line')
 
         self.type_config = {
-            "domain": {"color": "#ADD8E6", "level": 1},
-            "mx": {"color": "#FFD580", "level": 2},
-            "ns": {"color": "#90EE90", "level": 2},
-            "a": {"color": "#FF9999", "level": 3},
-            "txt": {"color": "#D8BFD8", "level": 3},
+        "domain": {"color": "#ADD8E6", "level": 1},   # Light Blue (Domain)
+        "mx": {"color": "#FFD580", "level": 2},       # Light Orange (MX)
+        "ns": {"color": "#90EE90", "level": 2},       # Light Green (NS)
+        "a": {"color": "#FF9999", "level": 3},        # Light Red/Pink (A Record)
+        "txt": {"color": "#D8BFD8", "level": 3},      # Light Purple (TXT)
+        "cname": {"color": "#FFFACD", "level": 3},    # Lemon Chiffon (CNAME)
         }
 
     def read_csv(self):
